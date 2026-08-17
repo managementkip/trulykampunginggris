@@ -94,7 +94,7 @@
     .brand{display:flex;align-items:center;gap:12px;min-width:210px}
 
     /* LOGO SLOT: replace this div with your <img> in GitHub when ready. */
-    .brand-logo{width:48px;height:48px;flex:0 0 48px;border-radius:15px;object-fit:contain;background:#fff}
+    .brand-logo{width:58px;height:50px;flex:0 0 58px;border-radius:0;object-fit:contain;object-position:left center;background:transparent}
     .logo-slot{
       width:48px;height:48px;flex:0 0 48px;border-radius:15px;
       border:1px dashed rgba(13,42,99,.23);background:rgba(255,255,255,.62);
@@ -315,7 +315,7 @@
       .ad-shell{grid-template-columns:1fr;max-width:650px}.ad-visual{min-height:390px}.ad-visual::after{font-size:280px;bottom:-80px}.ad-form-side{padding:38px}
     }
     @media (max-width:640px){
-      .wrap{width:min(100% - 28px,var(--max))}.section{padding:82px 0}.nav-inner{height:70px}.brand{min-width:0}.logo-slot,.brand-logo{width:42px;height:42px;flex-basis:42px}.brand-copy strong{font-size:13px}.brand-copy span{font-size:8px}.mobile-nav{top:70px}
+      .wrap{width:min(100% - 28px,var(--max))}.section{padding:82px 0}.nav-inner{height:70px}.brand{min-width:0}.logo-slot{width:42px;height:42px;flex-basis:42px}.brand-logo{width:50px;height:42px;flex-basis:50px}.brand-copy strong{font-size:13px}.brand-copy span{font-size:8px}.mobile-nav{top:70px}
       .hero{padding:52px 0 60px}.hero h1{font-size:clamp(49px,15vw,70px)}.hero-tag{font-size:9px}.hero-copy .lead{font-size:16px;line-height:1.7}.hero-actions{display:grid}.hero-actions .btn{width:100%}.proof-row{gap:12px 18px}.value-board::before{transform:rotate(2deg);border-radius:29px}.board{padding:21px;border-radius:28px}.board h3{font-size:31px}.value-step{grid-template-columns:40px 1fr auto}.value-step .num{width:40px;height:40px}.board-note{align-items:flex-start;flex-direction:column}.board-photo{position:relative;right:auto;bottom:auto;width:min(230px,68%);margin:18px auto 0}.board-photo-card{text-align:center}
       .context-grid{grid-template-columns:1fr}.context-item{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)!important}.context-item:last-child{border-bottom:0!important}.context-item strong{font-size:22px}
       .story-head,.audience-head,.skills-head,.roadmap-head{gap:24px}.story-main{min-height:390px;padding:27px}.story-main h3{font-size:36px}.story-card{padding:23px}
@@ -409,9 +409,7 @@
   <nav class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="#home" aria-label="Truly Kampung Inggris">
-        <!-- LOGO: add your logo manually here in GitHub.
-             Example: <img class="brand-logo" src="assets/logo.png" alt="Truly Kampung Inggris"> -->
-        <div class="Logo TKI.png" aria-hidden="true"></div>
+        <img class="brand-logo" src="./Logo%20TKI.png" alt="Truly Kampung Inggris" width="48" height="48" fetchpriority="high">
         <div class="brand-copy"><strong>Truly Kampung Inggris</strong><span>Pontianak</span></div>
       </a>
 
@@ -632,8 +630,7 @@
     <div class="wrap">
       <div class="footer-top">
         <div class="footer-brand">
-          <!-- LOGO: add the same logo here manually in GitHub. -->
-          <div class="logo-slot" aria-hidden="true"></div>
+          <img class="brand-logo" src="./Logo%20TKI.png" alt="Truly Kampung Inggris" width="48" height="48" loading="lazy">
           <div><strong>Truly Kampung Inggris</strong><span>Pontianak • Speak. Grow. Teach.</span></div>
         </div>
         <div class="footer-links"><a href="#why">Kenapa Truly</a><a href="#skills">Program</a><a href="#roadmap">Roadmap</a><a href="#camp">Camp</a><a href="#faq">FAQ</a></div>
